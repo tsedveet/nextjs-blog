@@ -11,9 +11,19 @@ export default function Home() {
       <section className={utilStyles.headingMd}>
         <p>I'm Tsedvee. I'm a software engineer and gamer.</p>
         <p>
+          За тэгээд зүгээр үзэж сурсан юмаараа нэг ийм юм хийж үзлээ. Онжого
+          харж байвал "LIKE" дархаа битий мартаарай
+        </p>
+        <p>
+          <a href="https://www.facebook.com/WoofWoofTV/posts/2073799783012518">
+            - LIKE -
+          </a>{" "}
+          😊😊😊
+        </p>
+        {/* <p>
           (This is a sample website - you’ll be building a site like this on{" "}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+        </p> */}
       </section>
     </Layout>
   );
