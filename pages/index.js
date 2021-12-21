@@ -55,7 +55,7 @@ export default function Home({ allPostsData }) {
           </a>{" "}
           😊😊😊
         </p>
-        <p>Hello! Knock! knock! Хаалгаа! 😊</p>
+        <p>Hello! Knock! knock! Онжого Хаалгаа! 😊</p>
         <Image
           priority
           src="/images/3.jpg"

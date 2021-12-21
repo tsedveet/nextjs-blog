@@ -3,6 +3,7 @@ import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
+import { useRouter } from "next/router";
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
@@ -23,6 +24,13 @@ export async function getStaticPaths() {
 }
 
 export default function Post({ postData }) {
+  const router = useRouter();
+
+  // If the page is not yet generated, this will be displayed
+  // initially until getStaticProps() finishes running
+  if (router.isFallback) {
+    return <div>Түр хүлээнэ үү...</div>;
+  }
   return (
     <Layout>
       <Head>
